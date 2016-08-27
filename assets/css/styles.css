@@ -1,0 +1,88 @@
+/* =====================================
+            Base Styles
+===========================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar-section-top {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid lightblue;
+}
+.navbar-section-top-margTop {
+    margin-top: 0px;
+}
+.navbar-section-top-left {
+    padding-left: 0px;
+}
+.nav-item {
+    border-left:1px solid lightblue;
+}
+.nav-item:last-child {
+    border-right: 1px solid lightblue;
+}
+
+.welcome-text-img-left {
+    padding-left: 0px;
+}
+.welcome-text-box {
+    background: pink;
+    /*max-width: 100%;*/
+   /* padding-top:10px;
+    padding-bottom:10px;*/
+    /*margin-top: 20px;*/
+}
+.welcome-text-header {
+    color:lightblue;
+    margin-top:0;
+    line-height: 1;
+    text-align: center;
+}
+.parallax-section {
+    margin-top: 20px
+}
+.parallax-box {
+    background-image: url(../images/parallax1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.parallax-cnt h2 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.height100 {
+    height: 100%;
+}
+
+/* ====
+    cheat for not use flex box
+    =====
+*/
+@media (min-width: 992px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+        vertical-align: top;    
+    }
+    .row-height {
+        display:table;
+        height: 100%;
+        width: 100%;
+    }
+}
