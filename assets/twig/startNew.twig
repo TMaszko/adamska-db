@@ -1,68 +1,9 @@
-<!DOCTYPE html>
+
 <!-- TO DO: header osobno bo jest uzywany w wielu miejscach tak samo maps zapakuje sie to do osobnych twigow -->
-<html lang="pl">
-<head>
-    <title>Adamska doradztwo finansowe</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-</head>
-<body>
     <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2">
-                    <div class="logo">
-                        LOGO FIRMY
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <address>
-                        <p>POTRZEBUJESZ POMOCY?</p>
-                        <a href="tel:80023456789">
-                            <p>800-2345-6789</p>
-                        </a>
-                    </address>
-                </div>
-            </div>
-            <!-- NAVBAR-->
-            <div class="row">
-                <nav class="navbar navbar-default navbar-section-top">
-                    <div class="col-xs-12 hidden-md hidden-sm">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                    </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-section-top-margTop" id="bs-example-navbar-collapse-1">
-                        <div class="col-md-4 col-md-offset-2 navbar-section-top-left">
+        {% include 'content/header.twig' %}
+        <main>
 
-                            <ul class="nav navbar-nav">
-                                <li class="active nav-item"><a href="#">START</a></li>
-                                <li class="nav-item"><a href="#">OFERTA</a></li>
-                                <li class="nav-item"><a href="#">KONTAKT</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="col-md-4">
-                            <form class="navbar-form navbar-right">
-                               <div class="form-group">
-                                 <input type="text" class="form-control" placeholder="Search">
-                               </div>
-                               <button type="submit" class="btn btn-default">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header> 
-    </div> 
-    <main>
         <!-- SLIDER -->
             <section class="container-fluid">
                SLAJDER 
@@ -115,11 +56,4 @@
 
 
 <script>
-
-// window.onload = 
-//     (function(){
-//             var colEq = document.querySelector('.welcome-text-img-left'),
-//                 img100 = document.querySelector('.welcome-text-img-left img');
-//                 colEq.style.height = window.getComputedStyle(colEq.parentNode,null).getPropertyValue('height');
-//     })();
 </script>

@@ -3,114 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <title>Kredyty Hipoteczne</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 <body>
-    <div class="global-container">
+    <div class="container">
         <header>
-            <div class="logo">
-                LOGO FIRMY
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="logo">
+                        LOGO FIRMY
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <address>
+                        <p>POTRZEBUJESZ POMOCY?</p>
+                        <a href="tel:80023456789">
+                            <p>800-2345-6789</p>
+                        </a>
+                    </address>
+                </div>
             </div>
+            <!-- NAVBAR-->
+            <div class="row">
+                <nav class="navbar navbar-default navbar-section-top">
+                    <div class="col-xs-12 hidden-md hidden-sm">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-section-top-margTop" id="bs-example-navbar-collapse-1">
+                        <div class="col-md-4 col-md-offset-2 navbar-section-top-left">
 
-            <address>
-                <p>POTRZEBUJESZ POMOCY?</p>
-                <a href="tel:80023456789">
-                    <p>800-2345-6789</p>
-                </a>
-            </address>
+                            <ul class="nav navbar-nav">
+                                <li class="active nav-item"><a href="#">START</a></li>
+                                <li class="nav-item"><a href="#">OFERTA</a></li>
+                                <li class="nav-item"><a href="#">KONTAKT</a></li>
+                            </ul>
 
-        <!-- NAVBAR-->
-            <nav>
-                <ul>
-                    <li>START</li>
-                    <li>OFERTA</li>
-                    <li>KONTAKT</li>
-                </ul>
-                <form>
-                    <input type="text">
-                </form>
-            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="navbar-form navbar-right">
+                               <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Search">
+                               </div>
+                               <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <main>
-            <!-- CREDITS LIST WITH IMG -->
-            <section>
-                <h2>KREDYTY HIPOTECZNE</h2>
-                <div>
-                    <ul>
-                        <li><a href="">KREDYTY MIESZKANIOWE <span> > </span></a></li>
-                        <li><a href="">KREDYTY NA DOM <span> > </span></a></li>
-                        <li><a href="">KREDYTY KONSOLIDACYJNE <span> > </span></a></li>
-                        <li><a href="">POŻYCZKI HIPOTECZNE <span> > </span></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="assets/images/speaker.jpg" alt="A leader, who are speaking to his team">
-                </div>
-            </section>
-
-            <!-- PARALLAX IMG -->
-            <section>
-                <div>                
-                    <h2>Przejrzyste zasady dospasowane do Ciebie</h2>
-                     <!-- temp later div background with plugin  -->
-                    <img src="assets/images/parallax2.jpg" alt="">  
-                </div> 
-            </section>
-
-            <article>
-                <h2>KREDYTY MIESZKANIOWE</h2>
-                <div>
-                    <img src="assets/images/credits-flat.jpg" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
-
-                        Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <h2>KREDYTY NA DOM</h2>
-                <div>
-                    <img src="assets/images/credits-house.jpg" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
-
-                        Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <h2>KREDYTY KONSOLIDACYJNE</h2>
-                <div>
-                    <img src="assets/images/credits-consolidation.jpg" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
-
-                        Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <h2>POŻYCZKI HIPOTECZNE</h2>
-                <div>
-                    <img src="assets/images/loan-mortgage.jpg" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
-
-                        Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
-                    </p>
-                </div>
-            </article>
-             <!-- GOOGLE MAP -->
-            <section>
-                <div>
-                    <img src="assets/images/map-mockup.png" alt="">
-                </div>
-            </section>
-        </main>
     </div>
+    <main>
+        <!-- CREDITS LIST WITH IMG -->
+        <section class="container credits-list-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="credits-header">KREDYTY HIPOTECZNE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-height">
+                    <div class="col-md-6 col-xs-12 col-sm-height">
+                        <ul class="credits-list">
+                            <li class="credits-listItem active"><a href="#">KREDYTY MIESZKANIOWE <span> > </span></a></li>
+                            <li class="credits-listItem"><a href="#">KREDYTY NA DOM <span> > </span></a></li>
+                            <li class="credits-listItem"><a href="#">KREDYTY KONSOLIDACYJNE <span> > </span></a></li>
+                            <li class="credits-listItem"><a href="#">POŻYCZKI HIPOTECZNE <span> > </span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-height">
+                        <img src="assets/images/speaker2.jpg" alt="A leader, who are speaking to his team"
+                        class="img-responsive height100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARALLAX IMG -->
+       <section>
+         <div class="row">
+               <div class="col-xs-12 parallax-box2">
+                   <div class="container">
+                       <div class="parallax-cnt">           
+                           <h2 class="text-center">Przejrzyste zasady dopasowane do Ciebie</h2>
+                       </div>
+                   </div>
+               </div> 
+           </div> 
+       </section>
+
+        <section class="container">
+            <article>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="credits-header">KREDYTY MIESZKANIOWE</h2>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-12 credits-text-container">
+                            <div class="col-md-3 imgFloat">
+                                <img src="assets/images/credits-flat.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="credits-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
+
+                                    Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="credits-header">KREDYTY NA DOM</h2>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-12 credits-text-container">
+                            <div class="col-md-3 imgFloat">
+                                <img src="assets/images/credits-house.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="credits-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
+
+                                    Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+
+            <article>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="credits-header">KREDYTY KONSOLIDACYJNE</h2>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-12 credits-text-container">
+                            <div class="col-md-3 imgFloat">
+                                <img src="assets/images/credits-consolidation.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="credits-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
+
+                                    Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="credits-header">KREDYTY MIESZKANIOWE</h2>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-12 credits-text-container">
+                            <div class="col-md-3 imgFloat ">
+                                <img src="assets/images/loan-mortgage.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="credits-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Sed id erat quis ligula tempus tincidunt
+
+                                    Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Nam sed purus ut urna porttitor pulvinar. Fusce id pellentesque metus. Maecenas risus felis, consectetur vitae molestie ac, blandit eget tellus. Proin ac eros nec lacus iaculis volutpat. Sed pulvinar congue felis non venenatis. Nam eget sem diam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+         <!-- GOOGLE MAP -->
+        <section>
+            <div>
+                <img src="assets/images/map-mockup.png" alt="">
+            </div>
+        </section>
+    </main>
 
 
 </body>

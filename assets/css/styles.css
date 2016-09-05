@@ -1,7 +1,7 @@
 /* =====================================
             Base Styles
 ===========================================*/
-
+@import 'bootstrap.css';
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +12,15 @@ ul {
 a {
     text-decoration: none;
 }
+.mobileMenu-top .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
 
+}
+.mobileMenu-top .dv-navigation,
+.mobileMenu-top .navbar-collapse {
+    float: none !important;
+}
 .navbar-section-top {
     background-color: #ffffff;
     border-bottom: none;
@@ -25,6 +33,9 @@ a {
 }
 .navbar-section-top-left {
     padding-left: 0px;
+}
+.navbar-section-top-left .navbar-collapse {
+    float: left;
 }
 .nav-item {
     border-left:1px solid lightblue;
@@ -52,8 +63,16 @@ a {
 .parallax-section {
     margin-top: 20px
 }
-.parallax-box {
+.parallax-box1 {
     background-image: url(../images/parallax1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.parallax-box2 {
+    background-image: url(../images/parallax2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -69,11 +88,83 @@ a {
     height: 100%;
 }
 
+/* ==================   Offers */
+.thumb-shadowEffect {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.thumb-shadowEffect .bg-thumb {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+    color: #ffffff;
+}
+.shadowEffect {
+    background: rgba(34, 37, 51, 0.8);
+}
+.lightBlueEffect {
+    background: rgba(33, 194, 248, 0.8);
+}
+/* ==========
+    Credits
+    ========
+*/
+.credits-list-container {
+    margin-bottom: 20px;
+}
+.credits-header {
+    text-align: left;
+    color:darkviolet;
+    font-weight: bold;
+}
+.credits-listItem {
+    background-color:rgb(33, 194, 248);
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 26px;  /* to fill the table cell */
+}
+.credits-list {
+    margin:0;
+    padding:0;
+}
+.credits-listItem:first-child {
+    margin-top:0;
+}
+.credits-listItem.active {
+    background-color: gray;
+}
+.credits-listItem a {
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+
+}
+.credits-text-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 0;
+    background-color: #efefef;
+
+}
+.credits-text {
+
+}
+
+
+
+
+
+
 /* ====
     cheat for not use flex box
     =====
 */
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .col-sm-height {
         display: table-cell;
         float: none;
@@ -84,5 +175,17 @@ a {
         display:table;
         height: 100%;
         width: 100%;
-    }
+    }  
+}
+@media (max-width: 991px) {
+     .thumb-shadowEffect {
+        display:inline-block;
+        max-width: 100%;
+   }
+   .col-sm-height {
+        text-align: center;
+   }
+   .imgFloat  {
+        float:left;
+   }
 }
