@@ -1,48 +1,22 @@
 
 <!-- TO DO: header osobno bo jest uzywany w wielu miejscach tak samo maps zapakuje sie to do osobnych twigow -->
-    <div class="container">
         {% include 'content/header.twig' %}
-        <main>
-
+    <main>
         <!-- SLIDER -->
-            <section class="container-fluid">
-               SLAJDER 
-            </section>
+        {% include 'content/slider.twig' %}
 
-            <!-- WELCOME TEXT WITH IMAGE  -->
-            <section class="container-fluid">
-                <div class="row">
-                    <div class="row-height">
-                            <div class="col-md-4 welcome-text-img-left col-sm-height">    
-                                <img class="img-responsive height100"  src="assets/images/man-with-pencil.jpg" alt="">
-                            </div>           
-                            <article class="col-md-8 welcome-text-box col-sm-height ">
-                                <h2 class="welcome-text-header">TEKST WPROWADZAJĄCY</h2>
-                                <div class="col-md-6">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue eleifend tincidunt. Vivamus a tempus ante, sed interdum nisl. Nunc faucibus, elit sed sollicitudin sodales, nulla orci bibendum quam, et fermentum massa metus vitae leo. Etiam congue ipsum in augue porta, ut convallis augue faucibus. Aliquam sapien turpis, aliquet tincidunt nibh a, consequat molestie dolor. Nam fringilla ornare sem sed laoreet. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. 
-                                    </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>
-                                        Sed bibendum erat non nisi congue, id bibendum enim placerat. Donec convallis imperdiet nisi, ac laoreet quam venenatis id. Donec sodales lobortis libero. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. Nulla pulvinar vel nunc eu lobortis. Cras a augue nisl. Pellentesque mi diam, faucibus viverra elit sed, sagittis ornare sem. Aliquam leo ipsum, ultrices nec posuere sed, posuere eget leo. Donec vitae varius neque. 
-                                    </p>
-                                </div>
-                            </article>
-                    </div>
-                </div>
-            </section>
+        {% include 'content/welcome-text.twig' %}
             <!-- PARALLAX IMG  -->
-            <section class="container-fluid parallax-section">
-                <div class="row">
-                    <div class="col-xs-12 parallax-box1">
-                        <div class="container">
-                            <div class="parallax-cnt">           
-                                <h2 class="text-center">Zdobądź przewagę konkurencyjną dzięki dostępowi do kapitału</h2>
-                            </div>
+        <section class="parallax-section parallax-box1 parallax" data-url="public/static/img/k07/parallax1.jpg" data-mobile="true" data-speed="0.9">
+            <div class="parallax-cnt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                            <h2 class="text-center">Zdobądź przewagę konkurencyjną dzięki dostępowi do kapitału</h2>
                         </div>
-                    </div> 
-                </div>
+                    </div>
+                </div> 
+            </div>
             </section>
             <!-- GOOGLE MAP -->
             <section>
@@ -51,9 +25,8 @@
                 </div>
             </section>
         </main>
-</body>
-</html>
+    <script type="text/javascript" src="public/adamska/js/jquery.rd-parallax.js"></script>
+    <script src="public/adamska/js/mobile-menu.js"></script>
 
 
-<script>
-</script>
+

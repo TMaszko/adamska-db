@@ -1,58 +1,58 @@
-<header>
+<div class="container-fluid noPadding ">
+    <header>
    <!-- MENU MOBILE -->
-                {% if not auth %}
-                <div class="col-xs-12 hidden-sm hidden-md hidden-lg mobileMenu-top">
-                    <!--NAVIGATION-->
-                    <nav id="navigation" class="navigation"> 
-                        <div {% if menu_fixed %}data-spy="affix" data-offset-top="260" style="z-index:10000"{% endif %}>
-                            <a id="menu" tabindex="-1"></a>
-                            <div class="dv-navigation">{{ menu|raw }}</div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </nav>           
-                </div>              
-                {% endif %}
-<div class=" hidden-sm hidden-lg hidden-md">
-    <button class="menuMobile buttonMenuMobile fa fa-bars" data-toggle="collapse" data-target=".navbar-collapse"></button>
-</div>
-    <div class="row">
-        <div class="col-md-4 col-md-offset-2">
-            {% for i,row in position1 %}
-                {{ row|raw }}
-            {% endfor %}
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-            {% for i,row in position2 %}
-                {{ row|raw }}
-            {% endfor %}
-        </div>
-    </div>
-    <!-- NAVBAR-->
-    <div class="row">
-        <nav class="navbar navbar-default navbar-section-top hidden-xs">
-            <div class="col-xs-12 hidden-md hidden-sm">
+        {% if not auth %}
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg mobileMenu-top">
+                <!--NAVIGATION-->
+                        <div class="dv-navigation">{{ menu|raw }}</div>
+                        <div class="clearfix"></div>             
+            </div>              
+        {% endif %}
+        <div class=" hidden-sm hidden-lg hidden-md">
+            <div class="fixedTopBar">
+                <h1 class="text-center fixedTopBar-header ">Doradztwo Biznesowe</h1>
+                <div class="menuMobile buttonMenuMobile">
+                    <div class="hamburger">
+                        <span class="hamburger-inner"></span>
+                    </div>
+                </div>
             </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-section-top-margTop">
-                <div class="col-md-4 col-md-offset-2 col-sm-6 navbar-section-top-left">
-                       <div class="dv-navigation">{{ menu|raw }}</div>
-                        <div class="clearfix"></div>
-                  <!--   <ul class="nav navbar-nav">
-                        <li class="active nav-item"><a href="#">START</a></li>
-                        <li class="nav-item"><a href="#">OFERTA</a></li>
-                        <li class="nav-item"><a href="#">KONTAKT</a></li>
-                    </ul> -->
+        </div>
+        <div class="background-container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-md-offset-2">
+                    <div class="logo">
+                        {% for i,row in position1 %}
+                            {{ row|raw }}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hidden-xs contact">
+                    {% for i,row in position2 %}
+                        {{ row|raw }}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- NAVBAR-->
+        <div class="container hidden-xs">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-section-top hidden-xs">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="col-sm-12 text-center navbar-section-top-margTop">
+                        <div class="navbar-section-top-left">
+                               <div class="dv-navigation inlineBlock">{{ menu|raw }}</div>
+                                <div class="clearfix"></div>
+                          <!--   <ul class="nav navbar-nav">
+                                <li class="active nav-item"><a href="#">START</a></li>
+                                <li class="nav-item"><a href="#">OFERTA</a></li>
+                                <li class="nav-item"><a href="#">KONTAKT</a></li>
+                            </ul> -->
 
-                </div>
-                <div class="col-md-4 col-sm-6  hidden-xs">
-                    <form class="navbar-form navbar-right">
-                       <div class="form-group">
-                         <input type="text" class="form-control" placeholder="Search">
-                       </div>
-                       <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
-</header>
+        </div>
+    </header>
+</div>
