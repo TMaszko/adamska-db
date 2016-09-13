@@ -1,0 +1,22 @@
+<section class="offers-thumbnailsImg">
+    <div class="row">
+        <div class="row-height">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2  col-md-4 col-sm-height">
+                {% for i,row in position3 %}
+                    {{ row|raw }}
+                {% endfor %}
+            </div>
+            <div class="col-xs-12 col-md-4 col-sm-8 col-sm-offset-2 col-sm-height">
+               {% for i,row in position4 %}
+                    {{ row|raw }}
+                {% endfor %}
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-sm-8 col-sm-offset-2  col-sm-height">
+                {% for i,row in position5 %}
+                    {{ row|raw }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>    
+</section>

@@ -4,6 +4,7 @@
 @import  'css/utilities.css';
 @import  'css/slider.css';
 @import   'offersStyle.css';
+@import  'credits.css';
 
 
 
@@ -79,8 +80,6 @@ a:hover, a:visited {
 .credits-text {
 
 }
-
-
 
 @media (max-width: 768px) {
     body {
