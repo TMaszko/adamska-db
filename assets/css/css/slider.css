@@ -1,0 +1,42 @@
+.sliderMargin {
+    margin: 20px auto;
+}
+.sliderMargin img {
+    min-height:400px;
+    max-width: 100%;
+}
+#no-slider_ img {
+    max-width: none;
+    width: 1170px;
+}
+.sliderCaption {
+    cursor: pointer;
+    padding: 20px 40px  30px 40px; 
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    min-height:150px;
+}
+.sliderCaption-header {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: 2.1px;
+    margin-top: 30px;
+}
+.sliderCaption-text {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    #no-slider_ {
+        overflow: hidden;
+        position:relative;
+    }
+
+    section.sliderMargin .carousel-control {
+        display:none;
+    }
+}

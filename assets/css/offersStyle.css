@@ -1,0 +1,25 @@
+@import  'css/parallax.css';
+@import  'css/header.css';
+@import  'css/utilities.css';
+
+.thumb-shadowEffect {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.thumb-shadowEffect .bg-thumb {
+    text-align: left;
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+    color: #ffffff;
+}
+@media (max-width: 991px) {
+
+    .thumb-shadowEffect {
+        display:inline-block;
+        max-width: 100%;
+   }
+}

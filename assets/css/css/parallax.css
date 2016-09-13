@@ -1,0 +1,35 @@
+.parallax-section {
+    margin-top: 20px;
+}
+.parallax {
+    position: relative;
+    overflow: hidden;
+}
+.parallax_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-position: center center;
+}
+.parallax-box {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.parallax-cnt h2 {
+    font-size: 72px;
+    color: #ffffff;
+}
+@media (max-width: 991px) {
+    .parallax-cnt h2 {
+        font-size: 60px;
+        color: #ffffff;
+    }
+    .parallax-box {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}

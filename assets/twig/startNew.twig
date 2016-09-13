@@ -1,23 +1,14 @@
 
 <!-- TO DO: header osobno bo jest uzywany w wielu miejscach tak samo maps zapakuje sie to do osobnych twigow -->
-        {% include 'content/header.twig' %}
+<meta name="viewport" content="width=device-width,minimum-scale=1.0'">
+        {% include 'content/includes/header.twig' %}
     <main>
         <!-- SLIDER -->
-        {% include 'content/slider.twig' %}
+        {% include 'content/includes/slider.twig' %}
 
-        {% include 'content/welcome-text.twig' %}
+        {% include 'content/includes/welcome-text.twig' %}
             <!-- PARALLAX IMG  -->
-        <section class="parallax-section parallax-box1 parallax" data-url="public/static/img/k07/parallax1.jpg" data-mobile="true" data-speed="0.9">
-            <div class="parallax-cnt">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 ">
-                            <h2 class="text-center">Zdobądź przewagę konkurencyjną dzięki dostępowi do kapitału</h2>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            </section>
+       {% include 'content/includes/parallax1.twig' %}
             <!-- GOOGLE MAP -->
             <section>
                 <div>
@@ -25,8 +16,7 @@
                 </div>
             </section>
         </main>
-    <script type="text/javascript" src="public/adamska/js/jquery.rd-parallax.js"></script>
-    <script src="public/adamska/js/mobile-menu.js"></script>
+ 
 
 
 

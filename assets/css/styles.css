@@ -1,3 +1,13 @@
+@import  'css/parallax.css';
+@import  'css/welcome-text.css';
+@import  'css/header.css';
+@import  'css/utilities.css';
+@import  'css/slider.css';
+@import   'offersStyle.css';
+
+
+
+
 /* =====================================
             Base Styles
 ===========================================*/
@@ -10,228 +20,19 @@ ul {
     list-style: none;
 }
 a {
+    color:inherit;
     text-decoration: none;
 }
-.mobileMenu-top .navbar-nav {
-    margin-left: 0;
-    margin-right: 0;
-
-}
-.fixedTopBar {
-    position: fixed;
-    width:100%;
-    height:60px;
-    top: 0;
-    background: #fff;
-    z-index: 1000;
-    color: #000;
-    box-shadow: 0 2px 0 2px rgba(0,0,0,0.1);
-}
-.fixedTopBar-header {
-
-    padding-top:12px;
-}
-.buttonMenuMobile {
-    position:fixed;
-    top: 5px;
-    width:40px;
-    height: 56px;
-    padding:6px;
-    left:8px;
-}
-.buttonMenuMobile .hamburger-inner {
-    position: fixed;
-    top: 25px;
-    display: block;
-    height: 5px;
-    border-radius: 2px;
-    width: 40px;
-    background: #222533;
-    transition: background 0.3s .1s ease-in-out;
-}
-.buttonMenuMobile.is-active .hamburger-inner {
-    background: transparent;
-}
-    .buttonMenuMobile .hamburger-inner:before,.buttonMenuMobile .hamburger-inner:after {
-    position: fixed;
-    height:5px;
-    width:40px;
-    display:block;
-    border-radius: 2px;
-    content: '';
-    background: #222533;
-    transition: top .3s .3s ease-in-out,transform .3s ease-in-out ;
-
-}
-.buttonMenuMobile .hamburger-inner:before {
-    top: 13px;
-}
-.buttonMenuMobile .hamburger-inner:after {
-    top:37px;
-}
-.buttonMenuMobile.is-active .hamburger-inner:after,
-.buttonMenuMobile.is-active .hamburger-inner:before {
-    top: 25px;
-    transition: top .3s ease-in-out,transform .3s .3s ease-in-out ;
-}
-.buttonMenuMobile.is-active .hamburger-inner:before {
-    transform: rotate(45deg);
-}
-.buttonMenuMobile.is-active .hamburger-inner:after {
-    transform: rotate(-45deg);
+a:hover, a:visited {
+    color:inherit;
 }
 
-.mobileMenu-top {
-    background: #fff;
-    padding-left:0;
-    margin:0;
-    width:240px;
-    color: #000000;
-    top: 60px;
-    left:0;
-    bottom:0;
-    z-index: 100;
-    position: fixed;
-    transform: translateX(-240px);
-    transition: all 0.3s ease-in-out;
-}
-.mobileMenu-top.show {
-    transform: translateX(0);
-}
-.mobileMenu-top .collapse {
-    display:block;
-}
-.mobileMenu-top ul {
-     
- }
-.mobileMenu-top a {
-    color: #000000;
-}
-.noPadding {
-    padding : 0;
-}
-.inlineBlock {
-    display:inline-block;
-}
-.mobileMenu-top .dv-navigation,
-.mobileMenu-top .navbar-collapse {
-    float: none !important;
-}
 
-.navbar-section-top {
-    background-color: #ffffff;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid lightblue;
-}
-.background-container {
-    background: #21c2f8;
-}
-.navbar-section-top-margTop {
-    margin-top: 0px;
-}
-.navbar-section-top-left {
-    padding-left: 0px;
-}
-.navbar-section-top-left .navbar-collapse {
-    float: left;
-}
-.nav-item {
-    border-left:1px solid lightblue;
-}
-.nav-item:last-child {
-    border-right: 1px solid lightblue;
-}
-.navbar-form, .contact {
-    padding-right: 0;
-}
-.contact , .contact a {
-    color: #ffffff;
-}
-.sliderMargin {
-    margin: 20px auto;
-    padding: 0;
-}
 
-.welcome-text-img-left {
-    padding-left: 0px;
-}
-
-.welcome-text-box {
-    background: #efefef;
-    padding: 10px 0;
-    font-size: 20px;
-}
-.welcome-text-sect {
-
-}
-.welcome-text-header {
-    color: #21c2f8;
-    margin-top:0;
-    line-height: 1;
-    text-align: center;
-    font-size: 36px;
-}
-.parallax-section {
-    margin-top: 20px;
-}
-.parallax {
-    position: relative;
-    overflow: hidden;
-}
-.parallax_image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-position: center center;
-}
-.parallax-box1 {
-
-    padding-top: 150px;
-    padding-bottom: 100px;
-}
-.parallax-box2 {
-    background-position: center center;
-    padding-top: 150px;
-    padding-bottom: 100px;
-}
-.parallax-cnt h2 {
-    font-size: 72px;
-    color: #ffffff;
-}
-
-.height100 {
-    height: 100%;
-}
-.height75 {
-    height: 75%;
-}
 
 /* ==================   Offers */
-.thumb-shadowEffect {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-.thumb-shadowEffect .bg-thumb {
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    left: 0 ;
-    right: 0;
-    color: #ffffff;
-}
-.shadowEffect {
-    background: rgba(34, 37, 51, 0.8);
-}
-.lightBlueEffect {
-    background: rgba(33, 194, 248, 0.8);
-}
+
+
 /* ==========
     Credits
     ========
@@ -278,81 +79,17 @@ a {
 .credits-text {
 
 }
-.sliderMargin img {
-    min-height:400px;
-    max-width: 100%;
-}
-#no-slider_ img {
-    max-width: none;
-    width: 1170px;
-}
-.sliderCaption {
-    color: #ffffff;
-    font-size: 32px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    left:50%;
-}
 
 
 
-
-
-/* ====
-    cheat for not use flex box
-    =====
-*/
-@media (min-width: 991px) {
-    .col-sm-height {
-        display: table-cell;
-        float: none;
-        height: 100%;
-        vertical-align: top;    
-    }
-    .row-height {
-        display:table;
-        height: 100%;
-        width: 100%;
-    }  
-}
-@media (max-width: 991px) {
-     .thumb-shadowEffect {
-        display:inline-block;
-        max-width: 100%;
-   }
-    .welcome-text-img-left {
-        margin-bottom: 20px;
-        padding:0;
-    }
- 
-   .col-sm-height {
-        text-align:  justify;
-   }
-   .imgFloat  {
-        float:left;
-   }
-   .height100 {
-    height: auto;
-   }
-
-   .sliderMargin  {
-        margin: 20px auto;
-        padding: 0;
-
-    }
-    #no-slider_ {
-        position:relative;
-    }
-  
-      section.sliderMargin .carousel-control {
-        display:none;
-    }
-}
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
     }
+    
   
 }
+

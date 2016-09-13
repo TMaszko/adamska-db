@@ -18,30 +18,27 @@
                 </div>
             </div>
         </div>
-        <div class="background-container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-md-offset-2">
-                    <div class="logo">
-                        {% for i,row in position1 %}
-                            {{ row|raw }}
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 hidden-xs contact">
-                    {% for i,row in position2 %}
+        <div class="row top-logoInfo">
+            <div class="col-md-2 col-md-offset-2 col-sm-offset-1 col-sm-2">
+                <div class="logo">
+                    {% for i,row in position1 %}
                         {{ row|raw }}
                     {% endfor %}
                 </div>
             </div>
+            <div class="col-md-4 col-md-offset-3 col-sm-offset-2 col-sm-4 contact">
+                {% for i,row in position2 %}
+                    {{ row|raw }}
+                {% endfor %}
+            </div>
         </div>
         <!-- NAVBAR-->
-        <div class="container hidden-xs">
-            <div class="row">
+        <div class="hidden-xs">
                 <nav class="navbar navbar-default navbar-section-top hidden-xs">
                         <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="col-sm-12 text-center navbar-section-top-margTop">
                         <div class="navbar-section-top-left">
-                               <div class="dv-navigation inlineBlock">{{ menu|raw }}</div>
+                               <div class="dv-navigation inlineBlock verticalBot">{{ menu|raw }}</div>
                                 <div class="clearfix"></div>
                           <!--   <ul class="nav navbar-nav">
                                 <li class="active nav-item"><a href="#">START</a></li>
