@@ -1,0 +1,40 @@
+<div id="map"></div>
+<script>
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(50.678823,18.218341);
+      var mapOptions = {
+        zoom: 15,
+        center: myLatlng
+      }
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+var contentString = 
+  '<h3>Doradztwo Biznesowe anna Adamska</h3>'+
+  '<div id="InfoContent">'+
+  '<p>46-040 Ozimek</p>'+
+  '<p>ul.Janusza Korczaka 4/5</p>'+
+  '<p>+48604347019</p>'+
+  '</div>'+
+  '</div>';
+
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
+  
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      icon: '/public/adamska/mapmarker.png',
+      map: map,
+      title: 'Doradztwo Biznesowe Anna Adamska'
+              
+              
+      });
+ google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+    }
+
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAib2TeldRccthSR59f1ypKcTWYDo_46ac&callback=initialize"
+  type="text/javascript"></script>
