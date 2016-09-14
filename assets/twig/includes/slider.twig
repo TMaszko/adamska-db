@@ -21,7 +21,10 @@
                         $('#no-slider_ .item.active img').css('margin-left',-(991 - window.innerWidth)*0.5);
                     }
                 })
-
+            $('.sliderCaption').click( function () {
+                window.location = $(this).data('href');
+            })
         })
+
 
  </script>
