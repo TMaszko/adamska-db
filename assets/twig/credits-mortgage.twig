@@ -1,8 +1,49 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1.0'">
        {% include 'content/includes/header.twig' %}
     <main>
-        <!-- PARALLAX IMG  -->
+     <section class="container credits-list-container">
+         <div class="row">
+             <div class="col-xs-12">
+                  {% for i,row in position3 %}
+                        {{ row|raw }}
+                    {% endfor %}
+             </div>
+         </div>
+         <div class="row">
+             <div class="row-height">
+                {% for i,row in position4 %}
+                     {{ row|raw }}
+                {% endfor %}
+             </div>
+         </div>
+     </section>
+        
+     <!-- PARALLAX IMG -->
         {% include 'content/includes/parallax2.twig'%}
+
+     <section>
+        <article class="credits-article">
+            {% for i,row in position5 %}
+                     {{ row|raw }}
+                {% endfor %}
+         </article>
+         <article class="credits-article">
+             {% for i,row in position7 %}
+                     {{ row|raw }}
+                {% endfor %}
+         </article>
+
+         <article class="credits-article">
+            {% for i,row in position8 %}
+                    {{ row|raw }}
+            {% endfor %} 
+         </article>
+         <article class="credits-article">
+              {% for i,row in position9 %}
+                    {{ row|raw }}
+            {% endfor %}
+         </article>
+     </section>
           <!-- GOOGLE MAP -->
         <section>
             <div>
@@ -12,3 +53,5 @@
     </main>
     <script type="text/javascript" src="public/adamska/js/jquery.rd-parallax.js"></script>
     <script src="public/adamska/js/mobile-menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/js/fullpage/jquery.fullpage.css">
+    <script type="text/javascript" src="public/assets/js/fullpage/jquery.fullpage.min.js"></script>

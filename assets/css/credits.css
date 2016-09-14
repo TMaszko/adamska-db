@@ -1,0 +1,67 @@
+.credits-list-container {
+    margin-top: 20px;
+}
+.credits-header {
+    text-align: left;
+    color: #222533;
+    font-weight: bold;
+    font-size: 30px;
+}
+.credits-listItem {
+    position: relative;
+    background-color:rgb(33, 194, 248);
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 26px;  /* to fill the table cell */
+    transition: all .2s ease;
+}
+.credits-listItem:hover {
+    background: #222533;
+}
+.credits-listItem.active {
+    background-color: #222533;
+}
+.credits-listItem a { 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s ease;
+
+}
+.credits-listItem a:hover,
+.credits-listItem a:hover > .fa-angle-right {
+    color: #21c2f8;
+}
+.credits-listItem .fa-angle-right {
+    position: absolute;
+    top:50%;
+    transform: translateY(-55%);
+    right:10px;
+    transition: all .2s ease;
+}
+.credits-list {
+    margin:0;
+    padding:0;
+}
+.credits-listItem .fa-angle-right,
+.credits-listItem a {
+    color: inherit; 
+}
+.credits-listItem:first-child {
+    margin-top:0;
+}
+
+.credits-text-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #efefef;
+    padding-left: 0;
+
+}
+.credits-article {
+    padding: 30px;
+}
+.credits-text {
+    font-size: 20px;
+    text-align: justify;
+}
