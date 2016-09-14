@@ -3,57 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 <body>
-    <div class="global-container">
-        <header>
-            <div class="logo">
-                LOGO FIRMY
-            </div>
-            <address>
-                <p>POTRZEBUJESZ POMOCY?</p>
-                <a href="tel:80023456789">
-                    <p>800-2345-6789</p>
-                </a>
-            </address>
-
-        <!-- NAVBAR-->
-            <nav>
-                <ul>
-                    <li>START</li>
-                    <li>OFERTA</li>
-                    <li>KONTAKT</li>
-                </ul>
-                <form>
-                    <input type="text">
-                </form>
-            </nav>
-        </header>
-        <main>
-             <!-- GOOGLE MAP -->
-            <section>
-                <div>
-                    <img src="assets/images/map-mockup.png" alt="">
+    <section class="contact-sect">
+        
+        <div class="container"> 
+            <form action="">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="contactForm-header">FORMULARZ KONTAKTOWY</h2>
+                        <input type="text" class="contactField" placeholder="Imię:">
+                        <input type="text" class="contactField" placeholder="Telefon:">
+                        <input type="text" class="contactField" placeholder="Email:">
+                    </div>
                 </div>
-            </section>
-            <!-- CONTACT FORM -->
-            <section>
-                <h2>FORMULARZ KONTAKTOWY</h2>
-                <div>
-                    <form action="">
-                        <input type="text" placeholder="Name:">
-                        <input type="text" placeholder="Phone:">
-                        <input type="text" placeholder="Email:">
-                        <textarea placeholder="Message:" name="" id="" cols="30" rows="10">
-                            
-                        </textarea>
-                        <input type="submit" value="SEND MESSAGE">
-                    </form>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea placeholder="Wiadomość:" name="" id="" rows="5" class="textMsg"></textarea>
+                    </div>
                 </div>
-            </section>
-
-        </main>
-    </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <input type="submit" class="contact-submitBtn" value="Wyślij wiadomość!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     
 </body>
 </html>
