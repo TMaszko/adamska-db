@@ -32,6 +32,17 @@
                      {{ row|raw }}
                 {% endfor %}
          </article>
+
+         <article class="credits-article">
+            {% for i,row in position8 %}
+                    {{ row|raw }}
+            {% endfor %} 
+         </article>
+         <article class="credits-article">
+              {% for i,row in position9 %}
+                    {{ row|raw }}
+            {% endfor %}
+         </article>
      </section>
           <!-- GOOGLE MAP -->
        {% include 'content/includes/head.twig' %}
