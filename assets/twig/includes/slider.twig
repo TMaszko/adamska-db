@@ -16,6 +16,11 @@
 
  <script>
         $(function(){
+            $(document).ready(function() {
+                if ( window.innerWidth < 991 ){
+                        $('#no-slider_ .item.active img').css('margin-left',-(991 - window.innerWidth)*0.5);
+                    }
+            })
                 $(window).resize(function() {
                     if ( window.innerWidth < 991 ){
                         $('#no-slider_ .item.active img').css('margin-left',-(991 - window.innerWidth)*0.5);

@@ -1,0 +1,40 @@
+{% include 'content/includes/header.twig' %}
+{% include 'content/includes/head.twig' %}
+    <section class="contact-sect">
+        <div class="container"> 
+            <form action="" id="" method="post" data-type="bootbox">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="contactForm-header">FORMULARZ KONTAKTOWY</h2>
+                        <input type="text" class="contactField" placeholder="Imię:">
+                        <input type="text" class="contactField" placeholder="Telefon:">
+                        <input type="text" class="contactField" placeholder="Email:">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea placeholder="Wiadomość:" name="" id="" rows="5" class="textMsg"></textarea>
+                    </div>
+                </div>
+                <div class="row contact-submitBtn-box">
+                    <div class="col-xs-3">
+                        <input type="submit" class="contact-submitBtn" value="Wyślij wiadomość!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+{% include 'content/includes/footer.twig' %}
+<script>
+$(function () {
+                    var options = {
+                        url: '/save',
+                        target: '',
+                        data: {action: 'save-respond-form'},
+                        success: Form.success,
+                        dataType: 'json'
+                    };
+                    // $('#Form_26').ajaxForm(options);
+                });
+         </script>

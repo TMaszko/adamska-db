@@ -21,9 +21,12 @@
     box-shadow: 0 2px 0 2px rgba(0,0,0,0.1);
 }
 .fixedTopBar-header {
-    font-size:30px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size:24px;
     font-weight: 500;
-    padding-top:12px;
 }
 .buttonMenuMobile {
     position:fixed;
@@ -88,6 +91,7 @@
     position: fixed;
     transform: translateX(-240px);
     transition: all 0.3s ease-in-out;
+    padding-right: 0;
 }
 .mobileMenu-top.show {
     transform: translateX(0);
@@ -99,7 +103,11 @@
      
  }
 .mobileMenu-top a {
-    color: #000000;
+    color: #222533;
+}
+.mobileMenu-top li > a:hover {
+    background: #222533;
+    color: #ffffff;
 }
 .mobileMenu-top .dv-navigation,
 .mobileMenu-top .navbar-collapse {

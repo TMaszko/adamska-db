@@ -42,6 +42,7 @@
 .credits-list {
     margin:0;
     padding:0;
+    position: relative;
 }
 .credits-listItem .fa-angle-right,
 .credits-listItem a {
@@ -55,13 +56,15 @@
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: #efefef;
-    padding-left: 0;
+    padding-left: 15px;
 
 }
 .credits-article {
     padding: 30px;
 }
 .credits-text {
+    padding-left:15px;
+    padding-right: 15px;
     font-size: 20px;
     text-align: justify;
 }

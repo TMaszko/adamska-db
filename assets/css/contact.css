@@ -1,44 +1,59 @@
-@import '../bootstrap/css/bootstrap.css';
+
 .contact-sect{
     background: #efefef;
+    padding-bottom: 30px;
 }
 .contactForm-header{
+    margin-top: 20px;
     font-size: 30px;
     font-weight: 600;
-    color:#222533;
+    color: #222533;
 }
 .contactField {
-    display:block;
-    padding:15px 30px;
+    display: block;
+    padding: 15px 30px;
     color: inherit;
-    margin:0;
+    margin: 0;
     float: left;
-    width:32%;
-    margin-right:1%;
+    width: 32%;
+    margin-right: 1%;
 }
 .contactField:nth-child(3) {
-    margin-left:.5%;
-    margin-right:1.5%;
+    margin-left: .5%;
+    margin-right: 1.5%;
 }
 .contactField:last-child {
     margin-right: 0;
 }
 .textMsg {
-    padding:10px 30px;
-    margin-top:30px;
-    width:99%;
+    padding: 10px 30px;
+    margin-top: 30px;
+    width: 99%;
 }
 .contact-submitBtn {
-    margin-top:10px;
-    background-color:#21c2f8;
-    border:none;
-    color:#ffffff;
+    margin-top: 10px;
+    background-color: #21c2f8;
+    border: none;
+    color: #ffffff;
     padding: 20px 40px;
     transition: all .2s ease;
+    font-size: 20px;
+}
+.addressContact {
+    margin-top: 10px;
 }
 .contact-submitBtn:hover {
     background-color: #222533;
-    color:#21c2f8;
+    color: #21c2f8;
+}
+.addressContact {
+    float: left;
+}
+.contact-submitBtn-box {
+    float: left;
+}
+.addressContact address{
+    float: right;
 }
 .contact-sect ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 }
@@ -48,4 +63,33 @@
  
 }
 .contact-sect :-moz-placeholder { /* Firefox 18- */
+} 
+@media (max-width: 768px) {
+    .contactField{
+        width:100%;
+        margin-top: 10px;
+    }
+    .contact-submitBtn {
+        font-size:17px;
+    }
+    .textMsg{
+        width:100%;
+    }
+    .addressContact {
+        float:none;
+    }
+    .addressContact address{
+        float: none;
+        text-align: center;
+    }
+    .contactField:nth-child(3){
+        margin-right: 0;
+        margin-left:0;
+    }
+    .contact-sect {
+        padding:20px;
+    }
+    .contact-submitBtn-box{
+        float:none;
+    }
 }

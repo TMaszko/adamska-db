@@ -44,14 +44,21 @@
             {% endfor %}
          </article>
      </section>
-          <!-- GOOGLE MAP -->
-        <section>
-            <div>
-                <img src="public/adamska/map-mockup.png" alt="">
-            </div>
-        </section>
+     {% include 'content/includes/head.twig' %}
     </main>
+    
+    {% include 'content/includes/footer.twig' %}
     <script type="text/javascript" src="public/adamska/js/jquery.rd-parallax.js"></script>
     <script src="public/adamska/js/mobile-menu.js"></script>
-    <link rel="stylesheet" type="text/css" href="/assets/js/fullpage/jquery.fullpage.css">
-    <script type="text/javascript" src="public/assets/js/fullpage/jquery.fullpage.min.js"></script>
+    <script src="public/adamska/js/jquery.easing.1.3.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutCubic');
+            event.preventDefault();
+        });
+    });
+    </script>

@@ -7,6 +7,11 @@
 .verticalBot {
     vertical-align: bottom;
 }
+.vertCenter {
+    position: absolute;
+    transform: translateY(-50%);
+    top:50%;
+}
 .noPadding {
     padding : 0;
 }
@@ -59,5 +64,8 @@
     }
     .imgFloat  {
          float:left;
+    }
+    .margTop {
+        margin-top: 20px;
     }
 }
